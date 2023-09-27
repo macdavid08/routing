@@ -100,7 +100,7 @@ export const NavLinks = () => {
             </svg>
           )}
         </div>
-      {toggle ? <Menu   flip={toggle} /> : null}
+      {toggle ? <Menu   flip={toggle} change={handleToggle} /> : null}
       </div>
       
     </>

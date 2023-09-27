@@ -2,11 +2,11 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import { createPortal } from 'react-dom';
 
-export const Menu = ({flip}) => {
+export const Menu = ({flip, change}) => {
     const content = (
        <>
        <nav className='w-full h-auto absolute top-20 bg-gray-100  '>
-            <ul className= "flex flex-col items-start justify-end gap-y-2 w-full p-4 uppercase font-semibold top-10    ">
+            <ul className= "flex flex-col items-start justify-end gap-y-2 w-full p-4 uppercase font-semibold top-10    " onClick={change}>
               <li>
                 <NavLink
                   to={"/product"}
